@@ -1,6 +1,6 @@
 import http from "node:http"
 
-const server = http.createServer(async (request, response) => {
+const server = http.createServer(async (request: any, response: any) => {
   if (request.method === "GET" && request.url === "/") {
     return response.end("Hello World!")
   }
